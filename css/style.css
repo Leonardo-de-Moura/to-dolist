@@ -70,13 +70,16 @@ main {
 .img {
     width: 40px;
 }
-.item.clicado{
+
+.item.clicado {
     background: #b5f5af;
 
 }
-.item.clicado .item-name{
+
+.item.clicado .item-name {
     text-decoration: line-through;
 }
+
 .delete {
     background-color: red;
     color: white;
