@@ -17,20 +17,21 @@ header{
 header h1{
 	line-height: 80px;
 	text-align: center;
+	flex: 60%;
 }
 .img1{
 	object-fit: contain;
 	width: 30px;
-	height: 50px;
-	margin-block: 15px;
-	margin-right: 140px;
+	height: 35px;
+	margin-block: 20px;
+	flex: 5%;
 }
 .img2{
 	object-fit: contain;
 	width: 40px;
 	height: 50px;
-	margin-block: 15px;
-	margin-left: 140px;
+	margin-block: 10px;
+	flex: 10%;
 }
 main{
 	height: 100dvh;
@@ -84,7 +85,7 @@ button{
 	height: 70px;
 	border-radius: 100%;
 	background-color: #0AB6AB;
-	left: 82%;
+	right: 2%;
 	bottom: 2%;
 }
 button img{
