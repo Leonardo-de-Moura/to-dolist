@@ -11,13 +11,13 @@
       type="image/x-icon"
     />
     <script defer src="script/script.js"></script>
-    />
+
   </head>
   <body>
     <header>
-      <img class="img1" src="assets/left-arrow.png" alt="" />
-      <h1>to do list</h1>
-      <img class="img2" src="assets/more.png" alt="" />
+      <h1>
+        to do list
+      </h1>
     </header>
     <main>
       <div class="title">
@@ -69,22 +69,21 @@
           <span>11:00 am</span>
         </div>
 
-        <button class="button"><img src="assets/plus.png" alt="" /></button>
-
         <div class="modal">
           <div class="modal-content">
-            <span class="fecharmodal"></span>
+            <span class="fecharmodal">close</span>
             <div class="task-name">
               <label class="task-camp" for="input">task name</label>
-              <input type="text" name="input" id=""/>
+              <input type="text" name="input" id="input" />
+              <button onclick="addtask()" class="submit">
+                create task
+              </button>
             </div>
           </div>
         </div>
 
-        <button><img src="assets/plus.png" alt="" /></button>
-
+        <button class="button"><img src="assets/plus.png" alt="" /></button>
       </div>
     </main>
-    <script src="script/script.js"></script>
   </body>
 </html>

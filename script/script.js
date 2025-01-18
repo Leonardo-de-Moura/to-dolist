@@ -15,8 +15,7 @@ fecharmodal.addEventListener("click", () => {
   modal.style.display = "none";
 });
 
-window.addEventListener("click", (event) => {
-  if (event.target === modal) {
-    modal.style.display = "none";
-  }
-});
+function addtask() {
+  let input = document.querySelector("#input").value;
+  
+}
