@@ -21,23 +21,3 @@ project/
 |-- style.css        # Estilos da aplicação
 |-- script.js        # Lógica em JavaScript
 ```
-
-## Como Usar
-1. Faça o download ou clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/todo-list-app.git
-   ```
-2. Navegue até o diretório do projeto:
-   ```bash
-   cd todo-list-app
-   ```
-3. Abra o arquivo `index.html` no seu navegador.
-
-## Demonstração
-### Tela Inicial:
-- Campo de entrada para adicionar novas tarefas.
-- Botães para excluir ou marcar uma tarefa como concluída.
-
-### Exemplos de uso:
-- Adicione "Estudar JavaScript" e marque como concluído após terminar.
-- Exclua tarefas que não são mais necessárias.
