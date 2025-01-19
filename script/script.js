@@ -23,10 +23,10 @@ function addtask() {
   let input = document.querySelector("#input").value;
   let time= document.querySelector(".hour").value;
   if (input && time){
-    const objeto= {task:String(input), hour: time}
+    const objeto= {task:String(input), hour: time};
 
-    tasks.push(objeto)
+    tasks.push(objeto);
 
-    console.log(JSON.stringify(tasks, null, 2))
+    console.log(JSON.stringify(tasks, null, 2));
   }
 }
