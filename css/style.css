@@ -57,7 +57,7 @@ header h1{
 	line-height: 50px;
 	text-align: center;
 }
-.tasks button{
+.tasks span{
 	flex: 15%;
 	line-height: 50px;
 	text-align: center;

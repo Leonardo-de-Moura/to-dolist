@@ -21,6 +21,9 @@ function addtask() {
         <img class="img" src="assets/rec.png" alt="" />
         <p>${objeto.task}</p>
         <span>${objeto.hour}</span>
+         <button onclick="deletetask()">
+          <img src="assets/trash.png" alt="">
+        </button>
       </div>`);
   }
 }
@@ -29,3 +32,7 @@ function dates(){
   const date= document.querySelector(".time").innerText=nowdate;
 }
 dates();
+function deletetask(){
+  let task = document.querySelector(".tasks");
+  task.remove()
+}
