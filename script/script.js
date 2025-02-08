@@ -1,29 +1,26 @@
-const modal = document.querySelector(".modal");
-const fecharmodal = document.querySelector(".fecharmodal");
-const button = document.querySelector(".button");
-
-button.addEventListener("click", () => {
+function openmodal() {
+  const modal = document.querySelector(".modal");
   modal.style.display = "flex";
-});
-
-fecharmodal.addEventListener("click", () => {
+}
+function closemodal() {
+  const modal = document.querySelector(".modal");
   modal.style.display = "none";
-});
-
+}
+function marked() {
+  document.querySelector(".tasks").classList.add("marked");
+  document.querySelector(".img").src = "assets/check-mark.png";
+}
 function addtask() {
   let input = document.querySelector("#input").value;
   let time = document.querySelector(".hour").value;
   if (input && time) {
     const objeto = { task: input, hour: time };
-    console.log(JSON.stringify(objeto));
     let task = (document.querySelector(
       ".container"
-    ).innerHTML += `<div class="tasks">
-        <img src="assets/rec.png" alt="" />
+    ).innerHTML += `<div onclick="marked()" class="tasks">
+        <img class="img" src="assets/rec.png" alt="" />
         <p>${objeto.task}</p>
         <span>${objeto.hour}</span>
       </div>`);
-      
   }
-  
 }
