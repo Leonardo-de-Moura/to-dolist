@@ -24,3 +24,8 @@ function addtask() {
       </div>`);
   }
 }
+function dates(){
+  let nowdate= new Date()
+  const date= document.querySelector(".time").innerText=nowdate;
+}
+dates();
