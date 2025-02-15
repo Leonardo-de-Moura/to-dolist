@@ -2,46 +2,47 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>To-do list</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="shortcut icon"
-    href="assets/png-clipart-check-mark-computer-icons-green-tick-green-check-icon-miscellaneous-angle-thumbnail.png"
-    type="image/x-icon" />
-  <script defer src="script/script.js"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lista de tarefas</title>
+  <link rel="shortcut icon" href="assets/clipart.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/global.css">
+  <script src="script/script.js" defer></script>
 </head>
 
 <body>
   <header>
     <h1>
-      to do list
+      lista de tarefas
     </h1>
   </header>
   <main>
-    <div class="title">
-      <h2>Tasks</h2>
-      <p class="time">march 4, 2010</p>
-    </div>
-    <div class="container">
-      <div class="modal">
-        <div class="modal-content">
-          <button onclick="closemodal()" class="fecharmodal"><img src="assets/x.png" alt=""></button>
-          <div class="task-name">
-            <label class="task-camp" for="input">task name</label>
-            <input type="text" name="input" id="input" />
-            <input class="hour" type="time">
-            <button onclick="addtask()" class="submit">
-              create task
-            </button>
-          </div>
+    <section>
+      <div class="task">
+        <div class="check">
+          <img src="assets/rec.png" alt="">
         </div>
-
+        <div class="task-name">nome da tarefa</div>
+        <div class="hour-task"> hora da tarefa</div>
+        <div class="trash"><img src="assets/trash.png" alt=""></div>
       </div>
+    </section>
+
+    <div class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <label for="task">tarefa:</label>
+        <input type="text" name="task">
+        <label for="hour">horário:</label>
+        <input type="text" name="hour">
+        <button class="button-modal">add task</button>
+      </div>
+    </div>
+    <button class="button">
+      <img src="assets/plus.png" alt="">
+    </button>
+    </div>
   </main>
-  <button onclick="openmodal()" class="button"><img src="assets/plus.png" alt="" /></button>
-  </div>
 </body>
 
 </html>
