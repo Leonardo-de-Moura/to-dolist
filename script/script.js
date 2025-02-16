@@ -10,12 +10,12 @@ closeModal.addEventListener("click", () => {
 	modal.style.display = "none";
 })
 buttonSubmit.addEventListener("click",
-	function addTask() {
+	() => {
 
 
 		const inputTask = document.querySelector(".inputTask").value;
 		const inputHour = document.querySelector(".inputHour").value;
-		const section =document.querySelector("section")
+		const section = document.querySelector("section")
 
 
 		if (inputTask && inputHour) {
