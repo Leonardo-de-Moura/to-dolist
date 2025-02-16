@@ -35,16 +35,23 @@ buttonSubmit.addEventListener("click",
 
 			document.querySelector(".inputTask").value = "";
 			document.querySelector(".inputHour").value = "";
+
 		}
 		const check = document.querySelector(".img"); const task_name = document.querySelector(".task-name");
 		const task_hour = document.querySelector(".hour-task");
+
+
 		check.addEventListener("click", () => {
 			check.src = "assets/x.png"
 			task_name.classList.add("marked");
 			task_hour.classList.add("marked");
 		})
+
+
 		const task = document.querySelector(".task")
 		const del = document.querySelector(".trash-img")
+
+		
 		del.addEventListener("click", () => {
 			task.classList.add("delete");
 			const idForDelete= document.querySelector(".delete")
