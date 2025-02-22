@@ -21,25 +21,27 @@
 }
 
 .close {
-  float: right;
+  position:absolute;
+  top: 10px;
+  right: 15px;
   bottom: 100%;
   font-size: 50px;
   cursor: pointer;
+}
+input{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  height: 35px;
+  border-radius: 10px;
+  margin: auto;
 }
 .button-modal{
 	width: 200px;
 	height: 50px;
 	background-color: blue;
 	border-radius: 20px;
-	margin: 80px;
-}
-input,label{
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	width: 80%;
-	height: 35px;
-	border-radius: 10px;
-	margin: auto;
+	margin-block: 45px;
 }
 
