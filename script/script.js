@@ -31,7 +31,7 @@ function AddTask() {
 	}
 	InputHour.value = "";
 	InputTask.value = "";
-	console.log(tasks);
+	
 
 }
 
@@ -57,5 +57,5 @@ function Show() {
 		}
 	}
 
-	console.log(sections);
+	
 }
