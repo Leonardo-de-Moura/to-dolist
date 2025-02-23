@@ -31,7 +31,7 @@ function AddTask() {
 	}
 	InputHour.value = "";
 	InputTask.value = "";
-	
+
 
 }
 
@@ -47,15 +47,22 @@ function Show() {
 			taskDiv.classList.add("task");
 
 			taskDiv.innerHTML = `
-				<div class="check"><img src="assets/rec.png" alt=""></div>
+				<div  class="check"><img src="assets/rec.png" alt=""></div>
 				<div class="task-name">${obj.task}</div>
 				<div class="hour-task">${obj.hour}</div>
-				<div class="trash"><img src="assets/trash.png" alt=""></div>
+				<div onclick="Delete()" class="trash"><img src="assets/trash.png" alt=""></div>
 			`;
 
 			section.appendChild(taskDiv);
 		}
 	}
 
-	
+}
+function Delete() {
+	let trash = document.querySelector(".trash");
+	let taskDiv = document.quer("div");
+	trash.addEventListener("click", () => {
+		taskDiv.remove()
+	})
+
 }
