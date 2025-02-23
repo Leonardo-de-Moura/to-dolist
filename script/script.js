@@ -3,7 +3,7 @@ const Modal = document.querySelector(".modal");
 const CloseModal = document.querySelector(".close");
 let InputTask = document.querySelector(".inputTask");
 let InputHour = document.querySelector(".inputHour");
-const section = document.querySelector("section")
+
 Button.addEventListener("click", () => {
 	Modal.style.display = "flex";
 })
@@ -21,11 +21,20 @@ function AddTask() {
 			hour: InputHour.value
 		}
 		tasks.push(object)
-		console.log(tasks)
+		
 	}
 	InputHour.value = ""
 	InputTask.value = ""
 	//esta funcao adiciona um objeto na array tasks, e limpa os campos de input.
-
 }
-
+function ShowTask(){
+	for (let obj of tasks) {
+			document.querySelector(section) = `<div class="task">
+			<div class="check"><img src="assets/rec.png" alt=""></div>
+			<div class="task-name">${obj.InputTask}</div>
+			<div class="hour-task">${obj.InputHour}</div>
+			<div class="trash"><img src="assets/trash.png" alt=""></div>
+		  </div>`
+	
+	}
+}
