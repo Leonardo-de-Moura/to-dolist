@@ -1,7 +1,7 @@
 const Button = document.querySelector(".button");
 const Modal = document.querySelector(".modal");
-const CloseModal = document.querySelector(".close"); 
-let InputTask = document.querySelector(".inputTask"); 
+const CloseModal = document.querySelector(".close");
+let InputTask = document.querySelector(".inputTask");
 let InputHour = document.querySelector(".inputHour");
 const section = document.querySelector("section")
 Button.addEventListener("click", () => {
@@ -22,10 +22,6 @@ function AddTask() {
 		}
 		tasks.push(object)
 		console.log(tasks)
-		for (let prop of tasks) {
-			section.innerHTML += `<div>
-			eae</div>`
-		}
 	}
 
 }
