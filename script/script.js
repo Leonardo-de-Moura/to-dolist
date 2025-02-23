@@ -6,35 +6,56 @@ let InputHour = document.querySelector(".inputHour");
 
 Button.addEventListener("click", () => {
 	Modal.style.display = "flex";
-})
+});
 
 CloseModal.addEventListener("click", () => {
 	Modal.style.display = "none";
-})
-const tasks = []
+});
 
+const tasks = [];
+const sections = Array.from(document.querySelectorAll("section"));
 
 function AddTask() {
 	if (InputTask.value.trim() !== "" && InputHour.value.trim() !== "") {
 		let object = {
 			task: InputTask.value,
 			hour: InputHour.value
+		};
+
+
+		let duplicate = tasks.some(t => t.task === object.task && t.hour === object.hour);
+		if (!duplicate) {
+			tasks.push(object);
 		}
-		tasks.push(object)
-		
+
 	}
-	InputHour.value = ""
-	InputTask.value = ""
-	//esta funcao adiciona um objeto na array tasks, e limpa os campos de input.
+	InputHour.value = "";
+	InputTask.value = "";
+	console.log(tasks);
+
 }
-function ShowTask(){
-	for (let obj of tasks) {
-			document.querySelector(section) = `<div class="task">
-			<div class="check"><img src="assets/rec.png" alt=""></div>
-			<div class="task-name">${obj.InputTask}</div>
-			<div class="hour-task">${obj.InputHour}</div>
-			<div class="trash"><img src="assets/trash.png" alt=""></div>
-		  </div>`
-	
+
+function Show() {
+
+	if (tasks.length > 0) {
+		let section = sections[0];
+		section.innerHTML = "";
+
+
+		for (let obj of tasks) {
+			let taskDiv = document.createElement("div");
+			taskDiv.classList.add("task");
+
+			taskDiv.innerHTML = `
+				<div class="check"><img src="assets/rec.png" alt=""></div>
+				<div class="task-name">${obj.task}</div>
+				<div class="hour-task">${obj.hour}</div>
+				<div class="trash"><img src="assets/trash.png" alt=""></div>
+			`;
+
+			section.appendChild(taskDiv);
+		}
 	}
+
+	console.log(sections);
 }
