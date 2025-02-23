@@ -15,7 +15,7 @@ const tasks = []
 
 
 function AddTask() {
-	if (InputTask && InputHour) {
+	if (InputTask.value.trim() !== "" && InputHour.value.trim() !== "") {
 		let object = {
 			task: InputTask.value,
 			hour: InputHour.value
@@ -23,5 +23,9 @@ function AddTask() {
 		tasks.push(object)
 		console.log(tasks)
 	}
+	InputHour.value = ""
+	InputTask.value = ""
+	//esta funcao adiciona um objeto na array tasks, e limpa os campos de input.
 
 }
+
