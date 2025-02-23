@@ -7,7 +7,7 @@
   <title>lista de tarefas</title>
   <link rel="shortcut icon" href="assets/clipart.png" type="image/x-icon">
   <link rel="stylesheet" href="css/global.css">
-  <script  src="script/script.js" defer></script>
+  <script src="script/script.js" defer></script>
 </head>
 
 <body>
@@ -18,7 +18,12 @@
   </header>
   <main>
     <section>
-    
+      <div class="task">
+        <div class="check"><img src="assets/rec.png" alt=""></div>
+        <div class="task-name">task</div>
+        <div class="hour-task">12:40</div>
+        <div class="trash"><img src="assets/trash.png" alt=""></div>
+      </div>
     </section>
 
     <div class="modal">
@@ -28,8 +33,7 @@
         <input type="text" name="task" class="inputTask">
         <label for="hour">horário:</label>
         <input type="time" name="hour" class="inputHour">
-        <button  class="button-modal"
-        onclick="AddTask()">add task</button>
+        <button class="button-modal" onclick="AddTask()">add task</button>
       </div>
     </div>
     <button class="button">
