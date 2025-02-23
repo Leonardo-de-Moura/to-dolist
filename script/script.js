@@ -29,6 +29,3 @@ function AddTask() {
 	}
 
 }
-//obtive valores do html, configurei o modal, criei uma lista que recebera objetos, e instanciei uma funçao que verificas e existem valores nos inputs, crie uma objeto, o adiciona na lista, logo apos, tentei iterar com for of sobre os indices e as chaves dos abjetos, entretanto obtive um erro justamente por conta do iterador, o elemnto esta sendo adicionado com base no indice da array.
-
-//lista sera o database do projeto, ela recebera uma sequencia de objetos contendo as tasks que serao exibidos no DOM.
